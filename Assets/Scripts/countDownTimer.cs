@@ -11,9 +11,10 @@ public class countDownTimer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeRemaining -= Time.deltaTime;
+
 		if((timeRemaining < 4 && timeRemaining > 3.98f) || (timeRemaining < 3 && timeRemaining > 2.98f) || (timeRemaining < 2 && timeRemaining > 1.98f))
 		{
-			GetComponent<AudioSource>().PlayOneShot(countAudio);
+			// GetComponent<AudioSource>().PlayOneShot(countAudio);
 		}﻿
 	}
 
